@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "futureblocks:blocks/basalt_top",
+    "side": "futureblocks:blocks/basalt_side"
+  }
+}

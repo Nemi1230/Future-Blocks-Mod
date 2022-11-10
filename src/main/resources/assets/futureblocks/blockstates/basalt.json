@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "futureblocks:basalt",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "futureblocks:basalt"
+    },
+    "axis=z": {
+      "model": "futureblocks:basalt",
+      "x": 90
+    }
+  }
+}
