@@ -1,0 +1,7 @@
+#Tabs
+itemGroup.netherupdate_tab=Nether Update
+itemGroup.villageandpillageupdate_tab=Village & Pillage
+
+#Blocks
+tile.basalt.name=Basalt Block
+tile.bamboo_sapling.name=Bamboo
