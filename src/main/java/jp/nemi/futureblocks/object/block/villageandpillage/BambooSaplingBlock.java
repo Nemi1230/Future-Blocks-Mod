@@ -4,6 +4,7 @@ import jp.nemi.futureblocks.FBCore;
 import jp.nemi.futureblocks.Reference;
 import jp.nemi.futureblocks.init.FBBlocks;
 import jp.nemi.futureblocks.init.FBItems;
+import jp.nemi.futureblocks.init.FBSoundType;
 import net.minecraft.block.Block;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.material.Material;
@@ -37,6 +38,7 @@ public class BambooSaplingBlock extends Block implements IGrowable {
         this.setTickRandomly(true);
         this.setHardness(1.0F);
         this.setResistance(1.0F);
+        this.setSoundType(FBSoundType.BAMBOO_SAPLING);
     }
 
     @Override

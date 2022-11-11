@@ -3,6 +3,7 @@ package jp.nemi.futureblocks.object.block.villageandpillage;
 import jp.nemi.futureblocks.Reference;
 import jp.nemi.futureblocks.init.FBBlocks;
 import jp.nemi.futureblocks.init.FBItems;
+import jp.nemi.futureblocks.init.FBSoundType;
 import net.minecraft.block.Block;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.material.MapColor;
@@ -46,6 +47,7 @@ public class BambooBlock extends Block implements IGrowable {
         this.setHardness(1.0F);
         this.setResistance(1.0F);
         this.setDefaultState(this.blockState.getBaseState().withProperty(AGE, Integer.valueOf(0)).withProperty(STAGE, Integer.valueOf(0)).withProperty(BAMBOO_LEAVES, BambooBlock.BambooLeaves.NONE));
+        this.setSoundType(FBSoundType.BAMBOO);
     }
 
     @Override
@@ -61,13 +63,21 @@ public class BambooBlock extends Block implements IGrowable {
     @Override
     public IBlockState getStateFromMeta(int meta) {
         if (meta < 6) {
-
+            if (meta < 3) {
+                return getDefaultState().withProperty(AGE, Integer.valueOf(0)).withProperty(STAGE, Integer.valueOf(0)).withProperty(BAMBOO_LEAVES, BambooLeaves.values()[meta]);
+            }
+            else {
+                return getDefaultState().withProperty(AGE, Integer.valueOf(0)).withProperty(STAGE, Integer.valueOf(1)).withProperty(BAMBOO_LEAVES, BambooLeaves.values()[meta - 3]);
+            }
         }
         else {
-
+            if (meta < 9) {
+                return getDefaultState().withProperty(AGE, Integer.valueOf(1)).withProperty(STAGE, Integer.valueOf(0)).withProperty(BAMBOO_LEAVES, BambooLeaves.values()[meta - 6]);
+            }
+            else {
+                return getDefaultState().withProperty(AGE, Integer.valueOf(1)).withProperty(STAGE, Integer.valueOf(1)).withProperty(BAMBOO_LEAVES, BambooLeaves.values()[meta - 9]);
+            }
         }
-        //return this.getDefaultState().withProperty(AGE, meta & );
-        return this.getDefaultState();
     }
 
     @Override

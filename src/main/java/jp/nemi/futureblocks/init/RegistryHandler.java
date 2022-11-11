@@ -3,7 +3,9 @@ package jp.nemi.futureblocks.init;
 import jp.nemi.futureblocks.FBCore;
 import jp.nemi.futureblocks.Reference;
 import net.minecraft.block.Block;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
+import net.minecraft.util.SoundEvent;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -63,8 +65,23 @@ public class RegistryHandler {
         }
     }
 
+    @EventBusSubscriber(modid = Reference.MOD_ID)
+    public static class Sound {
+        public static final List<SoundEvent> SOUNDS = new LinkedList<>();
+
+        static void add(SoundEvent sound) {
+            SOUNDS.add(sound);
+        }
+
+        @SubscribeEvent
+        public static void registerSounds(final RegistryEvent.Register<SoundEvent> event) {
+            SOUNDS.forEach(sound -> event.getRegistry().register(sound));
+        }
+    }
+
     public static void init() {
         FBBlocks.register();
         FBItems.register();
+        FBSoundEvents.register();
     }
 }
