@@ -3,7 +3,7 @@ package jp.nemi.futureblocks.object.block.villageandpillage;
 import jp.nemi.futureblocks.Reference;
 import jp.nemi.futureblocks.init.FBBlocks;
 import jp.nemi.futureblocks.init.FBItems;
-import jp.nemi.futureblocks.init.FBSoundType;
+import jp.nemi.futureblocks.init.FBSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.material.MapColor;
@@ -47,7 +47,7 @@ public class BambooBlock extends Block implements IGrowable {
         this.setHardness(1.0F);
         this.setResistance(1.0F);
         this.setDefaultState(this.blockState.getBaseState().withProperty(AGE, Integer.valueOf(0)).withProperty(STAGE, Integer.valueOf(0)).withProperty(BAMBOO_LEAVES, BambooBlock.BambooLeaves.NONE));
-        this.setSoundType(FBSoundType.BAMBOO);
+        this.setSoundType(FBSounds.BAMBOO);
     }
 
     @Override

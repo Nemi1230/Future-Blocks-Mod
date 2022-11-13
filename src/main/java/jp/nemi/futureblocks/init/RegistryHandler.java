@@ -66,22 +66,16 @@ public class RegistryHandler {
     }
 
     @EventBusSubscriber(modid = Reference.MOD_ID)
-    public static class Sound {
-        public static final List<SoundEvent> SOUNDS = new LinkedList<>();
-
-        static void add(SoundEvent sound) {
-            SOUNDS.add(sound);
-        }
-
+    public static class Sounds
+    {
         @SubscribeEvent
-        public static void registerSounds(final RegistryEvent.Register<SoundEvent> event) {
-            SOUNDS.forEach(sound -> event.getRegistry().register(sound));
+        public static void registerSounds(RegistryEvent.Register<SoundEvent> event) {
+            FBSounds.registerSounds(event.getRegistry());
         }
     }
 
     public static void init() {
         FBBlocks.register();
         FBItems.register();
-        FBSoundEvents.register();
     }
 }

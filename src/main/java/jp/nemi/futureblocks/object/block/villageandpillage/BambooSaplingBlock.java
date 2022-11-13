@@ -4,24 +4,20 @@ import jp.nemi.futureblocks.FBCore;
 import jp.nemi.futureblocks.Reference;
 import jp.nemi.futureblocks.init.FBBlocks;
 import jp.nemi.futureblocks.init.FBItems;
-import jp.nemi.futureblocks.init.FBSoundType;
+import jp.nemi.futureblocks.init.FBSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.util.BlockRenderLayer;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.*;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.common.IPlantable;
-import net.minecraftforge.common.property.Properties;
 
 import javax.annotation.Nullable;
 import java.util.Random;
@@ -38,7 +34,7 @@ public class BambooSaplingBlock extends Block implements IGrowable {
         this.setTickRandomly(true);
         this.setHardness(1.0F);
         this.setResistance(1.0F);
-        this.setSoundType(FBSoundType.BAMBOO_SAPLING);
+        this.setSoundType(FBSounds.BAMBOO_SAPLING);
     }
 
     @Override

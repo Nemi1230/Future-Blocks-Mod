@@ -1,0 +1,189 @@
+{
+  "block.bamboo.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "futureblocks:block/bamboo/place1",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/place2",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/place3",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/place4",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/place5",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/place6",
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.bamboo.fall": {
+    "category": "block",
+    "sounds": [
+      "futureblocks:block/bamboo/step1",
+      "futureblocks:block/bamboo/step2",
+      "futureblocks:block/bamboo/step3",
+      "futureblocks:block/bamboo/step4",
+      "futureblocks:block/bamboo/step5",
+      "futureblocks:block/bamboo/step6"
+    ]
+  },
+  "block.bamboo.hit": {
+    "category": "block",
+    "sounds": [
+      "futureblocks:block/bamboo/step1",
+      "futureblocks:block/bamboo/step2",
+      "futureblocks:block/bamboo/step3",
+      "futureblocks:block/bamboo/step4",
+      "futureblocks:block/bamboo/step5",
+      "futureblocks:block/bamboo/step6"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.bamboo.place": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "futureblocks:block/bamboo/place1",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/place2",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/place3",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/place4",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/place5",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/place6",
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.bamboo.step": {
+    "category": "block",
+    "sounds": [
+      "futureblocks:block/bamboo/step1",
+      {
+        "name": "futureblocks:block/bamboo/step2",
+        "volume": 0.7
+      },
+      "futureblocks:block/bamboo/step3",
+      {
+        "name": "futureblocks:block/bamboo/step4",
+        "volume": 0.7
+      },
+      "futureblocks:block/bamboo/step5",
+      "futureblocks:block/bamboo/step6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.bamboo_sapling.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "futureblocks:block/bamboo/sapling_place1",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_place2",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_place3",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_place4",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_place5",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_place6",
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.bamboo_sapling.hit": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "futureblocks:block/bamboo/sapling_hit1",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_hit2",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_hit3",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_hit4",
+        "volume": 0.8
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_hit5",
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.bamboo_sapling.place": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "futureblocks:block/bamboo/sapling_place1",
+        "volume": 0.85
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_place2",
+        "volume": 0.85
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_place3",
+        "volume": 0.85
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_place4",
+        "volume": 0.85
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_place5",
+        "volume": 0.85
+      },
+      {
+        "name": "futureblocks:block/bamboo/sapling_place6",
+        "volume": 0.85
+      }
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  }
+}
